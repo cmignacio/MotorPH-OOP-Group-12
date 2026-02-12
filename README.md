@@ -17,6 +17,11 @@ This version refactors the original procedural design into a structured object-o
 
 ## OOP Implementation Highlights
 
+### Encapsulation
+- Employee attributes are declared as `private`.
+- Access to data is controlled through public getter and setter methods.
+- Internal data structures are protected from direct modification.
+
 ### Abstraction
 - `Employee` is implemented as an abstract class.
 - Payroll behavior is enforced through abstract methods.
@@ -95,3 +100,4 @@ Program: BS Information Technology
 - Ignacio, Charlene Mae De Venecia  
 - Balmes, Ronelyn  
 - Petrola, Joey  
+
