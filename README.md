@@ -1,54 +1,97 @@
-# MotorPH Employee Management App
+# MotorPH Employee Management App (OOP Version)
+
+## Overview
+
+This project is an Object-Oriented Programming (OOP) implementation of the MotorPH Employee Management System.
+
+The system manages employees, attendance, and payroll processing using core OOP principles such as:
+
+- Abstraction
+- Inheritance
+- Polymorphism
+- Encapsulation
+
+This version refactors the original procedural design into a structured object-oriented architecture.
+
+---
+
+## OOP Implementation Highlights
+
+### Abstraction
+- `Employee` is implemented as an abstract class.
+- Payroll behavior is enforced through abstract methods.
+- Common employee attributes are defined in the base class.
+
+### Inheritance
+- `RegularEmployee` extends `Employee`.
+- The design allows future expansion for other employee types.
+
+### Polymorphism
+- `computePay()` is overridden in subclasses.
+- `PayrollCalculator` processes employees using base class references.
+
+---
 
 ## Features
 
-* **Employee Management:**
-    * Add, view, update, and delete employee records.
-    * Store detailed employee information, including personal details, government IDs, and compensation data.
-    * Generate employee reports.
-* **Attendance Management:**
-    * View attendance records by employee and date range.
-* **Payroll Calculation:**
-    * Calculate regular and overtime pay.
-    * Compute government contributions (withholding tax, SSS, PhilHealth, Pag-IBIG).
-    * Calculate gross salary and net salary.
-    * Generate payroll reports.
+### Employee Management
+- Add, update, and delete employees
+- Store personal and government information
+- Manage salary and allowances
 
-## Getting Started
+### Attendance Management
+- Record attendance
+- Compute lateness and overtime
 
-### Installation
+### Payroll System
+- Weekly payroll computation
+- Overtime calculations (regular and rest day)
+- Government deductions:
+  - SSS
+  - PhilHealth
+  - Pag-IBIG
+- Withholding tax computation
+- Net pay calculation
 
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/jelynabadilla/MO-IT103-MotorPH-Employee-App.git
-    ```
+---
 
-### Running the Application
+## Data Storage
 
-* Use your IDE (like NetBeans) to run the `AppStart.java` file.
-* Input the login credentials from the `users.csv` file located in the data folder.
+The application uses CSV files:
 
-### Data Storage
+- `data/employees.csv`
+- `data/attendance.csv`
+- `data/users.csv`
 
-The application uses CSV files to store data:
+---
 
-* `data/employees.csv`: Stores employee records.
-* `data/attendance.csv`: Stores attendance records.
-* `data/users.csv`: Stores users' login credentials.
+## How to Run
 
+1. Open the project in NetBeans.
+2. Clean and Build the project.
+3. Run the application.
+4. Login using credentials from `users.csv`.
 
-##  Notes
+---
 
-* Ensure that the employees and attendance data files exist in the `data` directory. The application will create them if they don't exist.
+## Technologies Used
 
+- Java
+- Maven
+- Swing (GUI)
+- CSV File Handling
 
-## Contributors
+---
 
-This project was developed by the **System.out.println("Javengers");**
-* Abadilla, Jelyn
-* Barcarse, Gemmarie Sabinah
-* Ignacio, Charlene Mae
-* Porte, Ethan Malcolm
-* Santiago, Kiarra Anne
-* Santos, Sarah Natalie Jean
-* Turgo, Althea
+## Course Information
+
+Course: Object-Oriented Programming  
+Program: BS Information Technology  
+
+---
+
+## Developers
+
+- Ignacio, Charlene Mae De Venecia  
+- Balmes, Ronelyn  
+- Petrola, Joey  
